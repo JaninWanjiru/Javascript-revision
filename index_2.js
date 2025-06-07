@@ -31,7 +31,15 @@ console.log(objectToArray({name: "Alice", age: 25}))
 
 
 // Challenge 3 Capitalize words
-
+function capitalizeWords(arr) {
+    let wordsCapitalized = [];
+    for (let i=0; i<arr.length; i++) {
+        let capitalized = arr[i].toUpperCase() 
+        wordsCapitalized.push(capitalized);
+    }
+    return wordsCapitalized;
+}
+console.log(capitalizeWords(["well", "done"]));
 
 // Challenge 4 Find duplicates
 
