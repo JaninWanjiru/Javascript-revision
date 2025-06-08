@@ -55,5 +55,15 @@ function groupByType(arr) {
 }
 console.log(groupByType([1, "a", true, 2, "b", false]));
 
-
+// Challenge 5 Remove Falsy Values
+function removeFalsy(arr) {
+    let result = [];
+    for (let i=0; i< arr.length; i++) {
+        if (arr[i]) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+console.log(removeFalsy([0, "hello", false, 42, "", null]));
 
