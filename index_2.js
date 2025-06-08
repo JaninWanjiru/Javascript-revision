@@ -67,3 +67,15 @@ function removeFalsy(arr) {
 }
 console.log(removeFalsy([0, "hello", false, 42, "", null]));
 
+
+// Challenge 6 Sum nested arrays
+function sumNested(arr) {
+    let sum = 0
+    for (i=0; i<arr.length; i++) {
+        for ( let i=0; i< arr[i].length; i++) {
+            sum = sum + arr[i][i];
+        }
+    }
+    return sum;
+}
+console.log(sumNested([[10, 20], [30, 40], [50]]));
