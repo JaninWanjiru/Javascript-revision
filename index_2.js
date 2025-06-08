@@ -41,22 +41,19 @@ function capitalizeWords(arr) {
 }
 console.log(capitalizeWords(["well", "done"]));
 
-// Challenge 4 Find duplicates
+
+// Challenge 4 Group by Type
+function groupByType(arr) {
+    let result= {};
+    for (let i=0; i<arr.length; i++) {
+        if (!result[typeof arr[i]]) {
+            result[typeof arr[i]] = [];
+        }
+        result[typeof arr[i]].push(arr[i]);
+    }
+    return result;
+}
+console.log(groupByType([1, "a", true, 2, "b", false]));
 
 
-// Challenge 5 Group by Type
 
-
-// Challenge 6 Merge arrays Uniquely
-
-
-// Challenge 7 Object Key formatter
-
-
-// Challenge 8 Remove falsy values
-
-
-// Challenge 9 Second largest
-
-
-// Challenge 10 Sum nested arrays

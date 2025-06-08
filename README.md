@@ -5,7 +5,6 @@ Here are some more Javascript challenges I solved for my personal revision and b
 - Min of Negatives
 - Object to array
 - Capitalize words
-- Find Duplicates
 - Group by Type
 - Merge Arrays Uniquely
 - Object Key formatter
